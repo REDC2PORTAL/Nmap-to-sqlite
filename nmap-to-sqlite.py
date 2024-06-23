@@ -22,7 +22,7 @@ def get_nmap_scripts(script_dir='/usr/share/nmap/scripts'):
                 else:
                     scripts['Misc'].append(script_name)
     for category in scripts:
-        scripts[category].sort()  # Sort scripts alphabetically
+        scripts[category].sort() 
     return scripts
 
 def parse_nmap_xml(xml_file):
@@ -282,7 +282,6 @@ def main():
     root.configure(bg='black')
     root.geometry("1200x900")
 
-    # Add a canvas and scrollbar to the root window
     canvas = tk.Canvas(root, bg='black')
     scrollbar = tk.Scrollbar(root, orient="vertical", command=canvas.yview)
     scrollable_frame = tk.Frame(canvas, bg='black')
